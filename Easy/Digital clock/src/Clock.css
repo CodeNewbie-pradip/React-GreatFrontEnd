@@ -1,0 +1,82 @@
+.digital-clock {
+    display: flex;
+    gap: 5px;
+    font-size: 2rem;
+    justify-content: center;
+    margin-left: 200px;
+    align-items: center;
+  }
+  
+  .colon {
+    display: flex;
+    align-items: center;
+    color: #eda405c5;
+  }
+  
+  .seven-segment-digit {
+    position: relative;
+    width: 40px;
+    height: 70px;
+  }
+  
+  .segment {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  .segment.on {
+    background-color: #eda405c5;
+  }
+  
+  /* Segments for each 7-segment part */
+  .segment-1 {
+    top: 0;
+    left: 10px;
+    width: 20px;
+    height: 5px;
+  }
+  
+  .segment-2 {
+    top: 5px;
+    right: 0;
+    width: 5px;
+    height: 30px;
+  }
+  
+  .segment-3 {
+    bottom: 5px;
+    right: 0;
+    width: 5px;
+    height: 30px;
+  }
+  
+  .segment-4 {
+    bottom: 0;
+    left: 10px;
+    width: 20px;
+    height: 5px;
+  }
+  
+  .segment-5 {
+    bottom: 5px;
+    left: 0;
+    width: 5px;
+    height: 30px;
+  }
+  
+  .segment-6 {
+    top: 5px;
+    left: 0;
+    width: 5px;
+    height: 30px;
+  }
+  
+  .segment-7 {
+    top: 33px;
+    left: 10px;
+    width: 20px;
+    height: 5px;
+  }
+  
